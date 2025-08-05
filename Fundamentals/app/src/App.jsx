@@ -11,6 +11,7 @@ import Form from "./components/Form.jsx";
 import RenderConditional from "./components/RenderConditional.jsx";
 import LoginButton from "./components/LoginButton.jsx";
 import Warning from "./components/Warning.jsx";
+import NumberList from "./components/NumberList.jsx";
 
 function App() {
 
@@ -24,10 +25,11 @@ function App() {
       {/*<Button />*/}
       {/*<ParentFunction />*/}
       {/*<Form />*/}
-      <RenderConditional user = "João"/>
-      <LoginButton loggedIn = {false} />
-      <LoginButton loggedIn = {true} />
-      <Warning warning = {true} />
+      {/*<RenderConditional user = "João"/>*/}
+      {/*<LoginButton loggedIn = {false} />*/}
+      {/*<LoginButton loggedIn = {true} />*/}
+      {/*<Warning warning = {true} />*/}
+      <NumberList numbers = {[1, 2, 3, 4, 5]} />
     </>
   )
 }
