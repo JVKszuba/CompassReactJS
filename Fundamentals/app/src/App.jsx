@@ -2,6 +2,7 @@ import './App.css';
 
 import Welcome from "./components/Welcome.jsx";
 import GoodMorning from "./components/GoodMorning.jsx";
+import Parent from "./components/Parent.jsx";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Welcome />
       <GoodMorning />
+      <Parent name = "Bob" age = {30}/>
     </>
   )
 }
