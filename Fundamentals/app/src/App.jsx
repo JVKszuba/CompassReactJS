@@ -13,12 +13,16 @@ import LoginButton from "./components/LoginButton.jsx";
 import Warning from "./components/Warning.jsx";
 import NumberList from "./components/NumberList.jsx";
 import StyledButton from "./components/StyledButton.jsx";
+import Greeting from "./components/Greeting.jsx";
+import CounterNew from "./components/CounterNew.jsx";
+import TaskList from "./components/TaskList.jsx";
 
 function App() {
 
   return (
     <>
       <Welcome />
+      {/* Studying concepts */}
       {/*<GoodMorning />*/}
       {/*<Parent name = "Bob" age = {30}/>*/}
       {/*<Counter />*/}
@@ -31,7 +35,13 @@ function App() {
       {/*<LoginButton loggedIn = {true} />*/}
       {/*<Warning warning = {true} />*/}
       {/*<NumberList numbers = {[1, 2, 3, 4, 5]} />*/}
-      <StyledButton />
+      {/*<StyledButton />*/}
+
+      {/* Practicing concepts */}
+      <Greeting name = "João" />
+      <CounterNew />
+      <TaskList tasks = {[{id: 1, text: "One"}, {id: 2, text: "Two"}, {id: 3, text: "Three"}]} />
+      <TaskList />
     </>
   )
 }
