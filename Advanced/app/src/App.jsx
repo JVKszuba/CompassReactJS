@@ -6,6 +6,7 @@ import {MyContextProvider} from "./contexts/MyContext.jsx";
 import ContextValue from "./components/ContextValue.jsx";
 import Counter from "./components/Counter.jsx";
 import DisplayWindowSize from "./components/DisplayWindowSize.jsx";
+import Container from "./components/Container.jsx";
 
 function App() {
 
@@ -19,7 +20,12 @@ function App() {
       {/*  <ContextValue />*/}
       {/*</MyContextProvider>*/}
       {/*<Counter />*/}
-      <DisplayWindowSize />
+      {/*<DisplayWindowSize />*/}
+      <Container>
+        <h2>Section Title</h2>
+        <p>Section Subtitle</p>
+        <Counter />
+      </Container>
     </>
   )
 }
