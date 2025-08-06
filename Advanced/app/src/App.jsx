@@ -8,6 +8,8 @@ import Counter from "./components/Counter.jsx";
 import DisplayWindowSize from "./components/DisplayWindowSize.jsx";
 import Container from "./components/Container.jsx";
 import UserProfile from "./components/UserProfile.jsx";
+import HeavyCalculation from "./components/HeavyCalculation.jsx";
+import CounterCallback from "./components/CounterCallback.jsx";
 
 function App() {
 
@@ -27,7 +29,9 @@ function App() {
       {/*  <p>Section Subtitle</p>*/}
       {/*  <Counter />*/}
       {/*</Container>*/}
-      <UserProfile userId = {1} />
+      {/*<UserProfile userId = {1} />*/}
+      <HeavyCalculation />
+      <CounterCallback />
     </>
   )
 }
