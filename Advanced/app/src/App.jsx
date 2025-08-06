@@ -5,6 +5,7 @@ import ChildComponent from "./components/ChildComponent.jsx";
 import {MyContextProvider} from "./contexts/MyContext.jsx";
 import ContextValue from "./components/ContextValue.jsx";
 import Counter from "./components/Counter.jsx";
+import DisplayWindowSize from "./components/DisplayWindowSize.jsx";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       {/*  <ChildComponent />*/}
       {/*  <ContextValue />*/}
       {/*</MyContextProvider>*/}
-      <Counter />
+      {/*<Counter />*/}
+      <DisplayWindowSize />
     </>
   )
 }
