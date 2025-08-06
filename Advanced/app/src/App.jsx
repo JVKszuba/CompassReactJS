@@ -10,12 +10,16 @@ import Container from "./components/Container.jsx";
 import UserProfile from "./components/UserProfile.jsx";
 import HeavyCalculation from "./components/HeavyCalculation.jsx";
 import CounterCallback from "./components/CounterCallback.jsx";
+import Synchronized from "./components/Synchronized.jsx";
+import Fibonacci from "./components/Fibonacci.jsx";
+import UserStatus from "./components/UserStatus.jsx";
 
 function App() {
 
   return (
     <>
       <h1>Hello World</h1>
+      {/* Studying concepts */}
       {/*<UseEffectExample />*/}
       {/*<Timer />*/}
       {/*<MyContextProvider>*/}
@@ -30,8 +34,13 @@ function App() {
       {/*  <Counter />*/}
       {/*</Container>*/}
       {/*<UserProfile userId = {1} />*/}
-      <HeavyCalculation />
-      <CounterCallback />
+      {/*<HeavyCalculation />*/}
+      {/*<CounterCallback />*/}
+
+      {/* Practicing concepts */}
+      <Synchronized userInfo = {{name: "João Vitor", email: "joao@gmail.com"}}/>
+      <Fibonacci num = {10} />
+      <UserStatus />
     </>
   )
 }
