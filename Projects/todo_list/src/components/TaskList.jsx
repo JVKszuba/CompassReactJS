@@ -1,13 +1,16 @@
 import Task from "./Task.jsx";
 
-function TaskList() {
+function TaskList({tasks, onRemoveTask}) {
 
     return (
         <ul>
-          <Task />
-          <Task />
-          <Task />
-          <Task />
+          {tasks.map((task) => (
+              <Task
+                  key = {task.id}
+                  task = {task}
+                  onRemove = {() => onRemoveTask(task.id)}
+              />
+          ))}
         </ul>
     );
 }

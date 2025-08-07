@@ -1,10 +1,10 @@
 
-function Task() {
+function Task({task, onRemove}) {
 
     return (
         <li>
-          <span>Task Text</span>
-          <button>Remove</button>
+          <span>{task.text}</span>
+          <button onClick = {onRemove}>Remove</button>
         </li>
     );
 }
